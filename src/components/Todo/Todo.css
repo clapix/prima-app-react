@@ -1,0 +1,22 @@
+.todo-form {
+  background-color: rgb(205, 205, 163);
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-input {
+  border-radius: 20px;
+  border: 0;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#delete-button {
+  padding: 5px 15px;
+}
+
+ul li {
+  margin: 5px;
+}
