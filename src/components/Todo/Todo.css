@@ -1,22 +1,15 @@
-.todo-form {
-  background-color: rgb(205, 205, 163);
-  padding: 10px 20px;
+.tasklist {
   display: flex;
   flex-direction: column;
-}
-
-.todo-input {
-  border-radius: 20px;
-  border: 0;
+  gap: 1rem;
+    background-color: beige;
   padding: 10px;
-  font-size: 20px;
-  margin: 10px 0;
 }
 
-#delete-button {
-  padding: 5px 15px;
-}
-
-ul li {
-  margin: 5px;
+.todo-container {
+  background-color: rgb(223, 223, 188);
+  padding-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  text-align: center;
 }

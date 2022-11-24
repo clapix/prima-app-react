@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Layout from "./components/Layout/Layout";
-import logo from "./logo.svg"
-import { ReactComponent as LogoReact } from "./logo.svg"
+// import logo from "./logo.svg"
+// import { ReactComponent as LogoReact } from "./logo.svg"
 import "./index.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,3 +16,4 @@ root.render(
     {/*  <LogoReact/> */}
   </React.StrictMode>
 );
+

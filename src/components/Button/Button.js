@@ -2,8 +2,8 @@ import "./Button.css"
 
 function Button({ children }) {
   return (
-    <button>{children}</button>
-  )
+      <button class="primary">{children}</button>
+    )
 }
 
 export default Button;

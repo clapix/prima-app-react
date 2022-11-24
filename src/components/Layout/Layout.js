@@ -4,14 +4,13 @@ import Footer from "../Footer/Footer";
 import "./Layout.css"
 
 function Layout() {
-  let pippo = "il mio titolo"
-  let pippo2 = "il mio titolo"
+  let mioTitolo = "il mio titolo"
   return (
     <div className="container">
       <Header>
         questo testo verrà ignorato se non viene gestito il children nel componente Header
       </Header>
-      <Main tema="light" titolo={pippo} />
+      <Main tema="light" titolo={mioTitolo} />
       <Footer>
         ciao sono il <span>footer</span>
       </Footer>

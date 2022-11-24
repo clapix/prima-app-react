@@ -1,5 +1,6 @@
 import Card from '../Card/Card'
-import Todo from '../Todo/Todo'
+import TaskList from '../TaskList/TaskList'
+import ToDo from '../ToDo/ToDo'
 import jsonCards from '../Card/dati.json'
 
 function Main(props) {
@@ -7,7 +8,10 @@ function Main(props) {
   let arrayStringhe = ["prova1", "prova2"]
   return (
     <main>
-      <Todo />
+      {/* <h2>to-do-list con un componente</h2>
+      <TaskList /> */}
+      <h2>to-do-list con più componenti</h2>
+      <ToDo />
       <h2>{props.titolo}</h2>
       {array}
       {arrayStringhe}
@@ -20,7 +24,7 @@ function Main(props) {
 
       {/* <Card key={elementi.id} id={elementi.id} etichette={elementi.etichette} colore={props.tema} titolo={elementi.title} price={elementi.price} titoloPulsante={elementi.buttonTitle} immagine={elementi.cover}/> */}
       {jsonCards.cards.map((elementi) => (
-        <Card key={elementi.id} colore={props.tema} dati={elementi} />
+        <Card key={elementi.id} dati={elementi} />
       ))}
 
     </main>

@@ -1,40 +1,18 @@
-import "./Todo.css"
-import { useState } from "react"
+import { useState } from "react";
+import ToDoForm from "../ToDoForm/ToDoForm";
+import ToDoList from "../ToDoList/ToDoList";
+import "./ToDo.css";
 
-function Todo() {
-  let listaReset = ["Task1", "Task2"]
-  const [lista, setLista] = useState([listaReset])
-  const [valore, setValore] = useState("")
-
-  const handleChange = (e) => {
-    setValore(e.target.value);
-  }
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(lista);
-    setLista([...lista, valore])
-    setValore("")
-  }
-
+function ToDo() {
+  const [list, setList] = useState([]);
 
   return (
-    <>
-      <div>
-        <form onSubmit={handleSubmit} className="todo-form">
-          <input type="text" id="todo-input" name="" onChange={handleChange} value={valore} className="todo-input" />
-          <button type="submit">
-            Aggiungi
-          </button>
-        </form>
-        <ul id="todo-list">
-          {lista.map((value, index) => (
-            <li key={index}>{value} <button id="delete-button">X</button></li>
-          ))}
-        </ul>
+    <div className="todo-container">
+      <h1>To Do List</h1>
+      <ToDoForm list={list} setList={setList} />
+      <ToDoList list={list} />
       </div>
-    </>
-  )
+  );
 }
 
-export default Todo;
+export default ToDo;
