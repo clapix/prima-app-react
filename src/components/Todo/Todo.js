@@ -10,8 +10,8 @@ function ToDo() {
     <div className="todo-container">
       <h1>To Do List</h1>
       <ToDoForm list={list} setList={setList} />
-      <ToDoList list={list} />
-      </div>
+      <ToDoList list={list} setList={setList} />
+    </div>
   );
 }
 

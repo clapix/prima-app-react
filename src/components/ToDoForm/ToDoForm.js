@@ -15,6 +15,8 @@ function ToDoForm({ list, setList }) {
     setTask(e.target.value);
   };
 
+
+
   return (
     <form onSubmit={handleSubmit} className="tasklist">
       <label htmlFor="task">Inserisci nuovo task:</label>
